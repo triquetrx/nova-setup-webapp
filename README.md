@@ -72,8 +72,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Database used in the project
 
--> FireBase as the database is onto firebase
--> Install the database using "npm install --save firebase"
+-> FireBase is the database used <br/>
+-> Install it using "npm install --save firebase"
 
 
 
