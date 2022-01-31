@@ -1,0 +1,8 @@
+.LikedContentContainer{
+    height: 100vh;
+    background: hsla(360, 72%, 45%, 1);
+    background: linear-gradient(225deg, hsla(360, 72%, 45%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(360, 72%, 45%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(360, 72%, 45%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C42021", endColorstr="#000000", GradientType=1 );
+}
