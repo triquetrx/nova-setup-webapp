@@ -1,0 +1,191 @@
+
+body, html {
+    overflow-x: hidden;
+}
+
+.uploadHeader{
+    margin-bottom: 1px;
+    margin-top: 15px;
+    color: #BABECC;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+@media screen and (min-width: 768px){
+    .AddForm{
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+    .UploadImageForm{
+        margin-top: 16px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .AddForm{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .UploadImageForm{
+        margin-top: 25px;
+    }
+}
+
+.UploadImageForm{
+    
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    align-items: center;
+}
+
+.AddForm{
+    padding: 16px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    align-items: center;
+}
+
+.SubmitToAddButton {
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+
+.segmentAdd{
+    color: #BABECC;
+    margin-top: auto;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.segment {
+padding: 32px 0;
+text-align: center;
+}
+
+.SubmitToAddButton, .AddInput {
+border: 0;
+outline: 0;
+font-size: 16px;
+border-radius: 320px;
+padding: 14px;
+margin-bottom: 2px;
+background-color: #EBECF0;
+text-shadow: 1px 1px 0 #FFF;
+}
+
+.labelAdd, .fileUploader {
+display: block;
+margin-bottom: 15px;
+text-align: center;
+width: 100%;
+}
+
+input[type='file']{
+    color: #888a92;
+    text-align: center;
+}
+
+input[type='file']:hover{
+    cursor:pointer;
+}
+
+input[type=file]::file-selector-button {
+    visibility: hidden;
+  }
+
+.AddInput {
+margin-right: 8px;
+box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+width: 81%;
+text-align: center;
+box-sizing: border-box;
+transition: all 0.2s ease-in-out;
+appearance: none;
+-webkit-appearance: none;
+}
+
+.AddInput:focus {
+box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+.SubmitToAddButton {
+color: #AE1100;
+padding: 13px 55px;
+font-weight: bold;
+box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+transition: all 0.2s ease-in-out;
+cursor: pointer;
+font-weight: 600;
+}
+
+.SubmitToUploadButton{
+    color: #AE1100;
+    padding: 13px 30px;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    border-top-right-radius: 320px;
+    border-bottom-right-radius: 320px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.UploadFiles {
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-bottom-left-radius: 320px;
+    border-top-left-radius: 320px;
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.SubmitToAddButton:hover {
+box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+.SubmitToAddButton:active {
+box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.SubmitToAddButton .icon {
+margin-right: 8px;
+}
+.SubmitToAddButton.unit {
+border-radius: 8px;
+line-height: 0;
+width: 48px;
+height: 48px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+margin: 0 8px;
+font-size: 19.2px;
+}
+.SubmitToAddButton.unit .icon {
+margin-right: 0;
+}
+.SubmitToAddButton.red {
+display: block;
+width: 90%;
+color: #AE1100;
+}
+
+.input-group {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.input-group .labelAdd, .fileUploader {
+margin: 0;
+flex: 1;
+}

@@ -1,0 +1,149 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #EAEBED;
+    color: #0C090D;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+}
+
+#navbar{
+    color: #EAEBED;
+    background-color: #000;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#navbarToggleExternalContent{
+    background-color: #0C090D
+}
+
+
+
+#navbarContent{
+    color: #EAEBED;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: -25px;
+}
+
+.upDown{
+    margin-top: 5px;
+}
+
+.logo{
+    margin-top: -31px;
+}
+
+#lightMode{
+    color: #EAEBED;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#darkMode{
+    color: #EAEBED;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#dropIcon{
+    color: #EAEBED;
+    font-size: 30px;
+}
+
+.navbar-toggler-icon{
+    overflow: hidden;
+}
+
+#upIcon{
+    color:#EAEBED;
+    font-size: 30px;
+    display: hidden;
+}
+
+#toggleButton{
+    border: none;
+}
+
+.hidden{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#mainButton{
+    width: 5px;
+    margin-right: 15px;
+}
+
+#dropIcon:hover{
+    color: #EAEBED;
+    box-shadow: 0 5px 13px rgb(56, 56, 56);
+    transition-delay: 2s ease;
+}
+
+#upIcon:hover{
+    color: #EAEBED;
+    box-shadow: 0 5px 13px rgb(53, 52, 52);
+    transition-delay: 2s ease;
+}
+
+#bottom-nav{
+    align-self: center;
+    width: 100%;
+    background-color: #0c090db0;
+    color: #EAEBED;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 5px 5px #0c090d75;
+}
+
+#HomeButton{
+    background-color: #0c090d00;
+    border: none;
+    color: #C42021;
+    font-size: 30px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+
+#plusButton{
+    border: none;
+    width: 60px;
+    height: 60px;
+    overflow: visible;
+    margin-bottom: 20px;
+    align-content: center;
+    border-radius: 150px;
+    background: linear-gradient(315deg, #3a333c, #312b32);
+    box-shadow:  -5px -5px 10px #332d35,
+                 5px 5px 10px #39333b;
+    font-size: 40px;
+    color: #EAEBED;
+}
+
+#userButton{
+    background-color: #0c090d00;
+    border: none;
+    color: #EAEBED;
+    font-size: 30px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+
+#homeText{
+    margin-bottom: 10px;
+}

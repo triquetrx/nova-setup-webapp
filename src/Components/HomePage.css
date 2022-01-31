@@ -1,0 +1,211 @@
+.scrollMenu{
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.scrollMenu::-webkit-scrollbar{
+  display: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container .card{
+    width: 320px;
+    height: 430px;
+  }
+  .container{
+    justify-content: center;
+  }
+  .blockEmpty{
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .card{
+    width: 320px;
+    height: 450px;
+  }
+  .container{
+    display: inline-block;
+
+  }
+  .blockEmpty{
+    height: calc(100px * 25%);
+  }
+}
+
+.container{
+    position: relative;
+    margin-left: 10px;
+    display: inline-flex;
+  }
+  
+  .container .card{
+    position: relative;
+    background: #000;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #C42021;
+    clip-path: circle(210px at 60% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 996;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container .card .imgBx img{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container .card:hover .contentBx{
+    height: 210px;
+  }
+  
+  .container .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #EAEBED;
+    margin: 0;
+  }
+  
+  .container .card .contentBx .size, .container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container .card:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container .card:hover .contentBx{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container .card .contentBx .size h3, .container .card .contentBx h3{
+    color: #EAEBED;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  
+.container .card .contentBx .size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.container .card .contentBx .size span:hover{
+    background: #C42021;
+    color: #EAEBED;
+}
+  
+.container .card .contentBx .color span{
+    width: 20px;
+    height: 20px;
+    background: #C42021;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.container .card .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+  
+.container .card:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.likeButton{
+  background-color: #C42021;
+  border: 0px;
+  border-radius: 40px;
+  padding: 10px 50px;
+  color: #EAEBED;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}

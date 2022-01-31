@@ -1,0 +1,152 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.main-head{
+    height: 150px;
+    background: #EAEBED;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.login-form{
+    margin-top: 30%;
+    text-align: left;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 30%;
+        text-align: left;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+    .AllButtons{
+        display: inline;
+        padding-left: 5px;
+    }
+    #linkAccount{
+        margin-left: -10px;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 15%;
+    padding: 50px;
+    text-align: left;
+    color: #EAEBED;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+
+
+#loginButton{
+    margin-right: 10px;
+    background-color: #448FDA;
+    color: #EAEBED;
+    margin-top: 20px;
+    border: 0px;
+    padding: 10px 50px;
+}
+
+#registerButton{
+    margin-right: 10px;
+    background-color: #C42021;
+    border: 0px;
+    padding: 10px 50px;
+    color: #EAEBED;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#loginButton:hover {
+    color: #EAEBED;
+    box-shadow: 0 5px 13px #448FDA;
+    transition-delay: 2s ease;
+}
+
+#registerButton:hover {
+    color: #EAEBED;
+    box-shadow: 0 5px 13px #ff4646;
+    transition-delay: 2s ease;
+}
+
+#linkAccount{
+    color: #000;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+#linkAccount:hover{
+    cursor: pointer;
+}
+
+#signInWithGoogle{
+    background-color: #000;
+    color: #EAEBED;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+}
+
+#signInWithFaceBook{
+    background-color: #3b5998 ;
+    color: #EAEBED;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+}
+
+#signInWithGoogle:hover{
+    color: #EAEBED;
+    box-shadow: 0 5px 13px #000;
+    transition-delay: 2s ease;
+}
+
+.btnContainer{
+    width: 100%;
+    display: inline;
+}

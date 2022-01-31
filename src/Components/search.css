@@ -1,0 +1,95 @@
+.searchBar{
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .searchMenu{
+        height: 490px;
+    }
+    .availableSearches{
+        margin: 10px;
+        margin-left: 45px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .searchMenu{
+        height: 450px;
+    }
+
+    .availableSearches{
+        margin: 10px;
+        margin-left: 225px;
+    }
+}
+
+.availableSearches{
+    color: #8a8c94;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    margin-top: 20px;
+    list-style: none;
+    text-align: justify;
+}
+
+.listSearch{
+    list-style-type: none;
+    margin-left: -30px;
+    margin-top: -15px;
+}
+
+.objects{
+    display: flex;
+    justify-content: left;
+}
+
+.availableSearches p{
+    margin-top: -5px;
+}
+
+.searchButton{
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-bottom-right-radius: 320px;
+    border-top-right-radius: 320px;
+    padding: 16px;
+    background-color: #EBECF0;
+    color: #8c8d8e;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+.searchInput{
+
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 65%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-bottom-left-radius: 320px;
+    border-top-left-radius: 320px;
+    padding: 16px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+.searchInput:focus{
+    box-shadow: inset 1px 1px 2px #8c8d8e, 
+                inset -1px -1px 2px #FFF;
+}
